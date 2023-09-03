@@ -1,0 +1,31 @@
+{
+  "name": "clinch-task-node",
+  "version": "1.0.0",
+  "description": "Clinch task",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "ts-node --esm ./src/seeders/index.ts",
+    "build": "tsc",
+    "start": "npm run build && node ./build/index.js"
+  },
+  "keywords": [
+    "clinch"
+  ],
+  "author": "Aayurt Shrestha",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "graphql": "^16.8.0",
+    "mongoose": "^7.5.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@types/node": "^20.5.9",
+    "typescript": "^5.2.2"
+  }
+}
